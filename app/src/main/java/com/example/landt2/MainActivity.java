@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 startHome();
                 break;
             case R.id.button2:
-                Intent dialIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtube.com"));
+                Intent dialIntent=new Intent(Intent.ACTION_DIAL, Uri.parse("tel:1234567890"));
+               // Intent dialIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtube.com"));
                 startActivity(dialIntent);
                 break;
         }
